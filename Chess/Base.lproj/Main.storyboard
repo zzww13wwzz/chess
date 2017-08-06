@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdM-dt-1kA">
+                                <rect key="frame" x="87.5" y="304" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bUT-Tq-nLo"/>
+                                    <constraint firstAttribute="height" constant="60" id="lKo-O6-Coq"/>
+                                </constraints>
+                                <state key="normal" title="Make Step King">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MakeStepKing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaR-bN-aCN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhu-Pk-h1b">
+                                <rect key="frame" x="87" y="218" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6iN-LB-bac"/>
+                                </constraints>
+                                <state key="normal" title="Make Step ChessFigure">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MakeStepChessFigure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZD-qs-Ft1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf1-2l-62Y">
+                                <rect key="frame" x="87" y="390" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="KKo-6Z-S7J"/>
+                                    <constraint firstAttribute="height" constant="60" id="seY-b7-VfS"/>
+                                </constraints>
+                                <state key="normal" title="Make Step Horse">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MakeStepHorse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ak-t6-zHh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qdM-dt-1kA" firstAttribute="top" secondItem="zhu-Pk-h1b" secondAttribute="bottom" constant="26" id="2tp-5B-UhZ"/>
+                            <constraint firstItem="qdM-dt-1kA" firstAttribute="top" secondItem="zhu-Pk-h1b" secondAttribute="bottom" constant="26" id="GVL-ZK-BJ1"/>
+                            <constraint firstItem="zhu-Pk-h1b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="NDf-sd-XCu"/>
+                            <constraint firstItem="Gf1-2l-62Y" firstAttribute="top" secondItem="qdM-dt-1kA" secondAttribute="bottom" constant="26" id="P7O-1D-wb7"/>
+                            <constraint firstItem="qdM-dt-1kA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qyw-nu-epd"/>
+                            <constraint firstItem="zhu-Pk-h1b" firstAttribute="trailing" secondItem="Gf1-2l-62Y" secondAttribute="trailing" id="WGV-dQ-7Ap"/>
+                            <constraint firstItem="zhu-Pk-h1b" firstAttribute="centerX" secondItem="qdM-dt-1kA" secondAttribute="centerX" id="c95-MG-2SF"/>
+                            <constraint firstItem="Gf1-2l-62Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFE-kA-t03"/>
+                            <constraint firstItem="zhu-Pk-h1b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="198" id="iK1-f7-kIo"/>
+                            <constraint firstItem="zhu-Pk-h1b" firstAttribute="leading" secondItem="Gf1-2l-62Y" secondAttribute="leading" id="xyN-mz-OxD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
